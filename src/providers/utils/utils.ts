@@ -22,7 +22,7 @@ export class UtilsProvider {
     return (suffix && suffix !== 'Select') ? suffix : '';
   }
 
-  static setFullName({firstName, lastName, middleInitial, suffix}: {firstName: string, lastName: string, middleInitial?: string, suffix?: string}) {
+  static setFullName(firstName: string, lastName: string, middleInitial?: string, suffix?: string) {
     let name: string = '';
     if (firstName && lastName) {
       name = firstName.trim();
